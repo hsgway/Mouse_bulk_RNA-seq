@@ -1,0 +1,106 @@
+---
+title: "Install_packages"
+author: "Yuko Hasegawa"
+date: "12/17/2021"
+output: html_document
+---
+
+# install DESeq2
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("DESeq2")
+```
+
+# install ggplot2
+```{r}
+install.packages("tidyverse")
+```
+
+# install apeglm
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("apeglm")
+```
+
+# install dplyr
+```{r}
+install.packages("dplyr")
+```
+
+# install pheatmap
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("EnsDb.Mmusculus.v79")
+```
+
+# install EnsDb.Mmusculus.v79
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("EnsDb.Mmusculus.v79")
+```
+
+# install RColorBrewer
+```{r}
+install.packages("RColorBrewer")
+```
+
+# install gridExtra
+```{r}
+install.packages("gridExtra")
+```
+
+# install pheatmap
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("heatmaps")
+```
+
+# install AnnotationDbi
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("AnnotationDbi")
+```
+
+# install org.Mm.eg.db
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("org.Mm.eg.db")
+```
+
+# install gage
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("gage")
+```
+
+# install gageData
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("gageData")
+```
+
+# install pathview
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("pathview")
+```
