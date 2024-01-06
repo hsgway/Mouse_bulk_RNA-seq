@@ -36,7 +36,7 @@ Default reference genome is mm10 (GENCODE M25)
 
 **2. Upload the codes to the HMS O2 server**
 
-1. Access to the [O2 Portal](https://o2portal.rc.hms.harvard.edu)
+1. Access [O2 Portal](https://o2portal.rc.hms.harvard.edu)
 2. Click "Files" and "Home Directory"
 
 ![2](https://github.com/hsgway/assets/blob/main/images/2.png)
@@ -53,6 +53,28 @@ The size of the file/folder that can be uploaded by this method is up to 10GB. I
 ### Edit the codes
 
 **Option 1. Edit directly from O2 Portal**
+
+1. Access [O2 Portal](https://o2portal.rc.hms.harvard.edu)
+2. Click "Files" and "Home Directory"
+
+![2](https://github.com/hsgway/assets/blob/main/images/2.png)
+
+3. Click the folder you uploaded
+
+![9](https://github.com/hsgway/assets/blob/main/images/9.png)
+
+4. Click the three dots next to "0_setting.sh" and select "Edit"
+
+![10](https://github.com/hsgway/assets/blob/main/images/10.png)
+
+5. Type in your email address to receive notifications of the job status
+
+![11](https://github.com/hsgway/assets/blob/main/images/11.png)
+
+6. Click the blue "Save" button on the top
+7. Close the window
+</br>
+
 **Option 2. Edit using VSCode on O2 Portal**
 
 1. Access [O2 portal](https://o2portal.rc.hms.harvard.edu)
@@ -89,4 +111,5 @@ The size of the file/folder that can be uploaded by this method is up to 10GB. I
 
 8. Click "File" and "Save"
 9. Close the window
+</br>
 
