@@ -29,7 +29,7 @@ Default reference genome is mm10 (GENCODE M25)
 1. Scroll to the top
 2. Click the green "Code" button and click "Download ZIP"
 
-![1](/assets/images/1.png)
+![1](../../assets/images/1.png)
 
 3. Unzip the folder
 
