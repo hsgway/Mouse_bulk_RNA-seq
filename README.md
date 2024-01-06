@@ -33,6 +33,7 @@ Default reference genome is mm10 (GENCODE M25)
 
 3. Unzip the folder
 
+
 **Upload the codes to the HMS O2 server**
 
 1. Access to the [O2 portal](https://o2portal.rc.hms.harvard.edu)
@@ -44,6 +45,7 @@ Default reference genome is mm10 (GENCODE M25)
 4. Drag and drop your unzipped folder
 
 The size of the file/folder that can be uploaded by this method is up to 10GB. If you need to upload larger file please use [FileZilla](https://filezilla-project.org/) or read [this manual](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1588662157/File+Transfer#Graphical-tools).
+
 
 ### Edit the codes through VScode app on O2
 
