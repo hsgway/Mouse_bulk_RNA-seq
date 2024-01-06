@@ -37,6 +37,9 @@ Default reference genome is mm10 (GENCODE M25)
 
 1. Access to the [O2 portal](https://o2portal.rc.hms.harvard.edu)
 2. Click "Files" and "Home Directory"
+
+![2](https://github.com/hsgway/assets/blob/main/images/2.png)
+
 3. Click the blue "Upload" button
 4. Drag and drop your unzipped folder
 
