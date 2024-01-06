@@ -24,17 +24,17 @@ Default reference genome is mm10 (GENCODE M25)
 
 ### Download the codes and upload them to the HMS O2 server
 
-**Download the codes from this repository (this web page you are seeing now)**
+**1. Download the codes from this repository (this web page you are seeing now)**
 
-1. Scroll to the top
-2. Click the green "Code" button and click "Download ZIP"
+1. Scroll to the top of this page
+2. Click the green "Code" button and then click "Download ZIP"
 
 ![1](https://github.com/hsgway/assets/blob/main/images/1.png)
 
-3. Unzip the folder
+3. Unzip the folder in your computer
+</br>
 
-
-**Upload the codes to the HMS O2 server**
+**2. Upload the codes to the HMS O2 server**
 
 1. Access to the [O2 portal](https://o2portal.rc.hms.harvard.edu)
 2. Click "Files" and "Home Directory"
@@ -42,9 +42,12 @@ Default reference genome is mm10 (GENCODE M25)
 ![2](https://github.com/hsgway/assets/blob/main/images/2.png)
 
 3. Click the blue "Upload" button
+
+![3](https://github.com/hsgway/assets/blob/main/images/3.png)
+
 4. Drag and drop your unzipped folder
 
-The size of the file/folder that can be uploaded by this method is up to 10GB. If you need to upload larger file please use [FileZilla](https://filezilla-project.org/) or read [this manual](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1588662157/File+Transfer#Graphical-tools).
+The size of the file/folder that can be uploaded by this method is up to 10GB. If you need to upload a larger file please use [FileZilla](https://filezilla-project.org/) or read [this manual](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1588662157/File+Transfer#Graphical-tools).
 
 
 ### Edit the codes through VScode app on O2
