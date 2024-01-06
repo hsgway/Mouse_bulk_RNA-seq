@@ -31,12 +31,12 @@ Default reference genome is mm10 (GENCODE M25)
 
 ![1](https://github.com/hsgway/assets/blob/main/images/1.png)
 
-3. Unzip the folder in your computer
+3. Unzip the folder on your computer
 </br>
 
 **2. Upload the codes to the HMS O2 server**
 
-1. Access to the [O2 portal](https://o2portal.rc.hms.harvard.edu)
+1. Access to the [O2 Portal](https://o2portal.rc.hms.harvard.edu)
 2. Click "Files" and "Home Directory"
 
 ![2](https://github.com/hsgway/assets/blob/main/images/2.png)
@@ -45,38 +45,48 @@ Default reference genome is mm10 (GENCODE M25)
 
 ![3](https://github.com/hsgway/assets/blob/main/images/3.png)
 
-4. Drag and drop your unzipped folder
+4. Upload the files by drag and drop your unzipped folder
 
 The size of the file/folder that can be uploaded by this method is up to 10GB. If you need to upload a larger file please use [FileZilla](https://filezilla-project.org/) or read [this manual](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1588662157/File+Transfer#Graphical-tools).
+</br>
 
+### Edit the codes
 
-### Edit the codes through VScode app on O2
+**Option 1. Edit directly from O2 Portal**
+**Option 2. Edit using VSCode on O2 Portal**
 
-1. Access to the [O2 portal](https://o2portal.rc.hms.harvard.edu)
+1. Access [O2 portal](https://o2portal.rc.hms.harvard.edu)
 2. Click "HMS-RC Applications" and "VSCode"
+
+![4](https://github.com/hsgway/assets/blob/main/images/4.png)
+
 3. Select the parameters as follows
 
-   Slurm Account (This is not your username): Waldor_mkw5
-   
-   Partition: Priority (If you are running more than 2 jobs, select the others)
-   
-   WallTime requested in hours: 
+* Slurm Account (This is not your username): Waldor_mkw5
+* Partition: Priority (If you are running more than two jobs, select the others)
+* WallTime requested in hours: 1 (hours, this must be changed in your future job)
+* Number of cores: 1 (this must be changed in your future job)
+* GPUs: blank
+* GPU card type: blank
+* Total memory in GB: 1 (GB, this must be changed in your future job)
 
-Open each "xxx.sh" file with a text editor and change the email address to yours
+*Please note that these parameters need to be modified in your future jobs submitted to O2*
 
+4. Click the blue "Launch" button
+5. Once the title bar turns green, click the blue "Launch VScode" button
 
-First, open the terminal in your PC and login to your HMS O2 account by typing the following command.
-```
-ssh <yourID(e.g. ab123)>@o2.hms.harvard.edu
-```
-You will be prompted to enter your password.
+![5](https://github.com/hsgway/assets/blob/main/images/5.png)
 
-Once you successfully login to your account, you are in login node.
+6. Click "Open file" and select the file to edit
 
-Type in the following command
+![6](https://github.com/hsgway/assets/blob/main/images/6.png)
 
-```
-sbatch 0_setting.sh
-```
+![7](https://github.com/hsgway/assets/blob/main/images/7.png)
 
+7. Type in your email address to receive notifications of the job status
+
+![8](https://github.com/hsgway/assets/blob/main/images/8.png)
+
+8. Click "File" and "Save"
+9. Close the window
 
