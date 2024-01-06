@@ -24,10 +24,13 @@ Default reference genome is mm10 (GENCODE M25)
 
 ### Download the codes and upload them to the HMS O2 server
 
-**Download the codes from this repository (this web page you are looking at)**
+**Download the codes from this repository (this web page you are seeing now)**
 
 1. Scroll to the top
 2. Click the green "Code" button and click "Download ZIP"
+
+![1](/assets/images/1.png)
+
 3. Unzip the folder
 
 **Upload the codes to the HMS O2 server**
