@@ -18,7 +18,7 @@ Default reference genome is mm10 (GENCODE M25)
 
 1. Submit the [PPMS New User Request Form](https://ppms.us/harvard-hms/vdoc/?cont=on&pf=11&docid=30)
 2. Submit the [O2 account request](https://harvardmed.service-now.com/stat?id=service_catalog_cards&sys_id=5165e1dbdb209050b642f27139961979&sysparm_category=991a7f2edb890c10b642f2713996196a&sysparm_catcardid=a5051476db0d0c10b642f2713996198d)
-3. Setup the environment (Instruction is [here](https://www.dropbox.com/scl/fi/ghvubyrevu8w2oqd3yr98/20210107_HMSO2Setting.docx?rlkey=kkeepe31hgu3dp2mt7lv8g6qe&dl=0))
+3. Setup the environment (Instruction is [here](https://www.dropbox.com/scl/fi/5j5rqpz1xxsxmla4zaez5/20240103_HMSO2Setting.docx?rlkey=4ny7fwjbgbdr5eoqplmgfkbmx&dl=0))
 
 ## Basic Usage
 
@@ -85,7 +85,34 @@ The size of the file/folder that can be uploaded by this method is up to 10GB. I
 </br>
 </br>
 
-### Step2: Edit the codes
+### Step3: Download the references and upload them to the HMS O2 server
+
+**Download the mm10 reference files**
+
+Download the [mm10_references folder](https://www.dropbox.com/scl/fo/cd74wtlbwtf48gwa0pm63/h?rlkey=ytfow001z5ohlatn2c846wc85&dl=0) to your local computer
+
+**Upload the mm10 reference files to the HMS O2 server**
+
+We use FileZilla to upload large files. If you prefer command-line tools, please visit [O2 wiki](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1588662157/File+Transfer#Transfers-on-the-O2-File-Transfer-Servers) for getting instruction.
+
+**Setup the environment before starting FileZilla (Instruction is [here](https://www.dropbox.com/scl/fi/5j5rqpz1xxsxmla4zaez5/20240103_HMSO2Setting.docx?rlkey=4ny7fwjbgbdr5eoqplmgfkbmx&dl=0))**
+
+1. Open FileZilla
+2. Enter the following connection parameters
+
+* host: transfer.rc.hms.harvard.edu
+* port: 22  (the SFTP port)
+* username: your HMS ID (formerly known as eCommons ID), the ID you use to login to O2, in lowercase, e.g., ab123 (not your Harvard ID or Harvard Key)
+* password: your HMS ID password, the password you use when logging in to O2
+
+![16](https://github.com/hsgway/assets/blob/main/images/16.png)
+
+3. Drag and drop the mm10_references folder to your home directory (right window)
+![17](https://github.com/hsgway/assets/blob/main/images/17_edit.png)
+</br>
+</br>
+
+### Step4: Edit the codes
 
 There are two options for editing the codes. You can also use a command-line text editor (e.g. vi) if you are familiar with it.
 
@@ -149,8 +176,9 @@ There are two options for editing the codes. You can also use a command-line tex
 8. Close the window
 9. Repeat these steps for all the other bash (xxx.sh) files
 </br>
+</br>
 
-### Step3: Submit a job to the O2
+### Step5: Submit a job to the O2
 
 1. Click "Clusters" and "_O2 Cluster Terminal" on [O2 portal](https://o2portal.rc.hms.harvard.edu)
 
@@ -192,6 +220,7 @@ The environment was successfully created if you see the "base" and "trimgalore"
 ![15](https://github.com/hsgway/assets/blob/main/images/15.png)
 
 Now, you are ready to start RNA-seq analysis.
+</br>
 </br>
 
 
@@ -235,6 +264,7 @@ For example, if your ID is ab123, your path to /n/scratch directory must be,
 
 You can upload your FASTQ files by drag and drop to the FASTQ folder
 </br>
+</br>
 
 ## Trimming
 
@@ -247,6 +277,7 @@ If your FASTQ data is paired-end (data has R1 and R2 files), submit the followin
 ```
 sbatch 1_TrimGalore_paired.sh
 ```
+</br>
 
 ## Mapping
 
@@ -266,6 +297,7 @@ If your FASTQ data is paired-end (data has R1 and R2 files), submit the followin
 ```
 sbatch 3_STAR_mapping_paired.sh
 ```
+</br>
 
 ## Merge BAM files
 
@@ -274,6 +306,7 @@ If you have multiple BAM files per sample (your FASTQ data consists of multiple 
 ```
 sbatch 4_samtools_merge.sh
 ```
+</br>
 
 ## Make a count table
 
@@ -286,6 +319,7 @@ If your FASTQ data is paired-end (data has R1 and R2 files), submit the followin
 ```
 sbatch 5_featureCounts_paired.sh
 ```
+</br>
 
 ## Download a count table and run DESeq2 on your local computer
 
