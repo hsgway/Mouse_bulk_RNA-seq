@@ -10,6 +10,7 @@ Default reference genome is mm10 (GENCODE M25)
 
 * Harvard Medical School O2 account
 * [RStudio](https://posit.co/download/rstudio-desktop/)
+* [FileZilla](https://filezilla-project.org/)
 
 **How do you get an HMS O2 account?**
 
@@ -166,8 +167,27 @@ The environment was successfully created if you see the "base" and "trimgalore"
 
 ![15](https://github.com/hsgway/assets/blob/main/images/15.png)
 
-Now you are ready to start RNA-seq analysis.
+Now, you are ready to start RNA-seq analysis.
 </br>
 
 
 ## Upload FASTQ files
+
+We use FileZilla to upload FASTQ files. If you prefer command-line tools, please visit [O2 wiki](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1588662157/File+Transfer#Transfers-on-the-O2-File-Transfer-Servers) for getting instruction.
+
+**Setup the environment before starting FileZilla (Instruction is [here](https://www.dropbox.com/scl/fi/ghvubyrevu8w2oqd3yr98/20210107_HMSO2Setting.docx?rlkey=kkeepe31hgu3dp2mt7lv8g6qe&dl=0))**
+
+1. Open FileZilla
+2. Enter the following connection parameters
+
+* host: transfer.rc.hms.harvard.edu
+* port: 22  (the SFTP port)
+* username: your HMS ID (formerly known as eCommons ID), the ID you use to login to O2, in lowercase, e.g., ab123 (not your Harvard ID or Harvard Key)
+* password: your HMS ID password, the password you use when logging in to O2
+
+![16](https://github.com/hsgway/assets/blob/main/images/16.png)
+
+3. 
+
+
+
