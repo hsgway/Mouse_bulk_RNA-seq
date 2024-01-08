@@ -32,7 +32,31 @@ Please read the following section for a detailed explanation.
 
 ## Getting Started
 
-### Step1: Download the codes and upload them to the HMS O2 server
+### Step1: Create /n/scratch directory on your HMS O2 server
+
+1. Access [O2 Portal](https://o2portal.rc.hms.harvard.edu)
+2. Click "Clusters" and "_O2 Cluster Terminal"
+
+![12](https://github.com/hsgway/assets/blob/main/images/12.png)
+
+2. Enter your password
+
+![13](https://github.com/hsgway/assets/blob/main/images/13.png)
+
+3. Now you are in your login node
+
+![14](https://github.com/hsgway/assets/blob/main/images/14.png)
+
+4. Type in the following command after "$" mark
+
+```
+/n/cluster/bin/scratch_create_directory.sh
+```
+
+5. Follow the instructions on the display
+</br>
+
+### Step2: Download the codes and upload them to the HMS O2 server
 
 **Download the codes from this repository (this web page you are seeing now)**
 
@@ -187,7 +211,88 @@ We use FileZilla to upload FASTQ files. If you prefer command-line tools, please
 
 ![16](https://github.com/hsgway/assets/blob/main/images/16.png)
 
-3. 
+3. Show /n/scratch directory in the right window (O2 server) by typing your path of /n/scratch directory
+   
+The path must be,
+```
+/n/scratch/users/<first character of your ID>/<your ID>
+```
+For example, if your ID is ab123, your path to /n/scratch directory must be,
+```
+/n/scratch/users/a/ab123
+```
 
+![17](https://github.com/hsgway/assets/blob/main/images/17_edit.png)
+
+![18](https://github.com/hsgway/assets/blob/main/images/18_edit.png)
+
+4. Create "FASTQ" folder by right click and "Create directory"
+
+![19](https://github.com/hsgway/assets/blob/main/images/19.png)
+
+![20](https://github.com/hsgway/assets/blob/main/images/20.png)
+
+
+You can upload your FASTQ files by drag and drop to the FASTQ folder
+</br>
+
+## Trimming
+
+If your FASTQ data is single-end, submit the following command from O2 Portal
+```
+sbatch 1_TrimGalore_single.sh
+```
+
+If your FASTQ data is paired-end (data has R1 and R2 files), submit the following command from O2 Portal
+```
+sbatch 1_TrimGalore_paired.sh
+```
+
+## Mapping
+
+First, create an index for STAR by submitting the following command from O2 Portal. **Please make sure to change --sjdbOverhang parameter depending on your read length before submitting. For example, if your read length is 101, --sjdbOverhang 100**
+
+```
+sbatch 2_STAR_index.sh
+```
+After the index is created, run the mapping code. **Please make sure that paths to your files/folders are correct**
+
+If your FASTQ data is single-end, submit the following command from O2 Portal
+```
+sbatch 3_STAR_mapping_single.sh
+```
+
+If your FASTQ data is paired-end (data has R1 and R2 files), submit the following command from O2 Portal
+```
+sbatch 3_STAR_mapping_paired.sh
+```
+
+## Merge BAM files
+
+If you have single BAM file per sample, skip this section
+If you have multiple BAM files per sample (your FASTQ data consists of multiple lanes), submit the following command from O2 Portal
+```
+sbatch 4_samtools_merge.sh
+```
+
+## Make a count table
+
+If your FASTQ data is single-end, submit the following command from O2 Portal
+```
+sbatch 5_featureCounts_single.sh
+```
+
+If your FASTQ data is paired-end (data has R1 and R2 files), submit the following command from O2 Portal
+```
+sbatch 5_featureCounts_paired.sh
+```
+
+## Download a count table and run DESeq2 on your local computer
+
+The count data can be opened in RStudio and analyzed by "7_DESeq2.Rmd"
+
+**Data on /n/scratch directory will be automatically deleted after 45 days**
+
+**Please download all the analyzed data from /n/scratch directory to your local storage before deleted**
 
 
