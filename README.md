@@ -89,7 +89,9 @@ The size of the file/folder that can be uploaded by this method is up to 10GB. I
 
 **Download the mm10 reference files**
 
-Download the [mm10_references folder](https://www.dropbox.com/scl/fo/cd74wtlbwtf48gwa0pm63/h?rlkey=ytfow001z5ohlatn2c846wc85&dl=0) to your local computer
+Download the [mm10_references folder](https://www.dropbox.com/scl/fo/cd74wtlbwtf48gwa0pm63/h?rlkey=ytfow001z5ohlatn2c846wc85&dl=0) to your local computer 
+</br> 
+</br> 
 
 **Upload the mm10 reference files to the HMS O2 server**
 
