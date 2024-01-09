@@ -270,6 +270,9 @@ You can upload your FASTQ files by drag and drop to the FASTQ folder
 
 ## Trimming
 
+If your FASTQ data is single-end, edit 1_TrimGalore_single.sh code
+
+
 If your FASTQ data is single-end, submit the following command from O2 Portal
 ```
 sbatch 1_TrimGalore_single.sh
