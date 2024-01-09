@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -c 8                               # Request eight-core
+#SBATCH -c 8                               # Request eight core
 #SBATCH -t 0-02:00                         # Runtime in D-HH:MM format
 #SBATCH -p priority                        # Partition to run in
 #SBATCH --mem-per-cpu=16G                 # Memory per core
