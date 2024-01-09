@@ -10,8 +10,8 @@
 #SBATCH --mail-type=ALL
 
 # directory
-dir="/n/scratch3/users/s/sk608/FASTQ"
-outdir="/n/scratch3/users/s/sk608/FASTQ_trimmed"
+dir="/n/scratch/users/<first character of your ID>/<your ID>/FASTQ"
+outdir="/n/scratch/users/<first character of your ID>/<your ID>/FASTQ_trimmed"
 
 mkdir $outdir
 
