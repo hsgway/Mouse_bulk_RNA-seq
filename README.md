@@ -282,8 +282,7 @@ You can upload your FASTQ files by drag and drop to the FASTQ folder
 
 ## Trimming
 
-If your FASTQ data is single-end, edit 1_TrimGalore_single.sh code
-
+**Before running, please change parameters in the scripts following Step4 in "Getting started" section**
 
 If your FASTQ data is single-end, submit the following command from O2 Portal
 ```
@@ -298,7 +297,7 @@ sbatch 1_TrimGalore_paired.sh
 
 ## Mapping
 
-First, create an index for STAR by submitting the following command from O2 Portal. **Please make sure to change --sjdbOverhang parameter depending on your read length before submitting. For example, if your read length is 101, --sjdbOverhang 100**
+First, you'll need to create an index for STAR by submitting the following command from O2 Portal. **Please change the --sjdbOverhang parameter depending on your read length before submitting. For example, if your read length is 101, --sjdbOverhang 100**
 
 ```
 sbatch 2_STAR_index.sh
@@ -318,7 +317,7 @@ sbatch 3_STAR_mapping_paired.sh
 
 ## Merge BAM files
 
-If you have single BAM file per sample, skip this section
+If you have a single BAM file per sample, skip this section
 If you have multiple BAM files per sample (your FASTQ data consists of multiple lanes), submit the following command from O2 Portal
 ```
 sbatch 4_samtools_merge.sh
