@@ -136,9 +136,15 @@ There are two options for editing the codes. You can also use a command-line tex
 
 ![11](https://github.com/hsgway/assets/blob/main/images/11.png)
 
-5. Click the blue "Save" button on the top
-6. Close the window
-7. Repeat these steps for all the other bash (xxx.sh) files
+5. Change \<first character of your ID\> and \<your ID\> to your ID
+
+ > For example, if your ID is ab123, </br>
+ > \<first character of your ID\> is a </br>
+ > \<your ID\> is ab123 </br>
+
+6. Click the blue "Save" button on the top
+7. Close the window
+8. Repeat these steps for all the other bash (xxx.sh) files
 </br>
 
 **Option 2. Edit using VSCode on O2 Portal**
@@ -174,9 +180,15 @@ There are two options for editing the codes. You can also use a command-line tex
 
 ![8](https://github.com/hsgway/assets/blob/main/images/8.png)
 
-7. Click "File" and "Save"
-8. Close the window
-9. Repeat these steps for all the other bash (xxx.sh) files
+7. Change \<first character of your ID\> and \<your ID\> to your ID
+
+ > For example, if your ID is ab123, </br>
+ > \<first character of your ID\> is a </br>
+ > \<your ID\> is ab123 </br>
+
+8. Click "File" and "Save"
+9. Close the window
+10. Repeat these steps for all the other bash (xxx.sh) files
 </br>
 </br>
 
