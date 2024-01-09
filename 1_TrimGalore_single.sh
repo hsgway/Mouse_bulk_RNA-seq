@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -c 8                               # Request eight core
-#SBATCH -t 0-04:00                         # Runtime in D-HH:MM format
+#SBATCH -t 0-24:00                         # Runtime in D-HH:MM format
 #SBATCH -p priority                        # Partition to run in
 #SBATCH --mem-per-cpu=8G                 # Memory per core
 #SBATCH -o hostname_%j.out                 # File to which STDOUT will be written, including job ID (%j)
