@@ -6,12 +6,12 @@
 #SBATCH -o hostname_%j.out                 # File to which STDOUT will be written, including job ID (%j)
 #SBATCH -e hostname_%j.err                 # File to which STDERR will be written, including job ID (%j)
                                            # You can change the filenames given with -o and -e to any filenames you'd like
-#SBATCH --mail-user=xxx@bwh.harvard.edu
+#SBATCH --mail-user=xxx@bwh.harvard.edu    # your email address for receiving notification
 #SBATCH --mail-type=ALL
 
 # directory
-dir="/n/scratch3/users/s/sk608/FASTQ"
-outdir="/n/scratch3/users/s/sk608/FASTQ_trimmed"
+dir="/n/scratch/users/<first character of your ID>/<your ID>/FASTQ"
+outdir="/n/scratch/users/<first character of your ID>/<your ID>/FASTQ_trimmed"
 
 mkdir $outdir
 
