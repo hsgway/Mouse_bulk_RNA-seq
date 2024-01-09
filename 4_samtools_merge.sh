@@ -13,8 +13,8 @@
 module load gcc/6.2.0 samtools/1.10
 
 # directory
-dir="/n/scratch/users/s/<your ID>/MappingResults"
-outdir="/n/scratch/users/s/<your ID>/MappingResults_merge"
+dir="/n/scratch/users/<first character of your ID>/<your ID>/MappingResults"
+outdir="/n/scratch/users/<first character of your ID>/<your ID>/MappingResults_merge"
 
 mkdir $outdir
 
