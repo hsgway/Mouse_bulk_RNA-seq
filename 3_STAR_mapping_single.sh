@@ -2,11 +2,11 @@
 #SBATCH -c 8                               # Request eight core
 #SBATCH -t 0-24:00                         # Runtime in D-HH:MM format
 #SBATCH -p priority                        # Partition to run in
-#SBATCH --mem-per-cpu=16G                 # Memory per core
+#SBATCH --mem-per-cpu=8G                   # Memory per core
 #SBATCH -o hostname_%j.out                 # File to which STDOUT will be written, including job ID (%j)
 #SBATCH -e hostname_%j.err                 # File to which STDERR will be written, including job ID (%j)
                                            # You can change the filenames given with -o and -e to any filenames you'd like
-#SBATCH --mail-user=yhsgw.ra@gmail.com
+#SBATCH --mail-user=xxx@gbwh.harvard.edu
 #SBATCH --mail-type=ALL
 
 # load module
@@ -14,11 +14,10 @@ module load gcc/6.2.0 star/2.7.3a
 module load samtools/1.10
 
 # directory
-dir="/n/scratch3/users/s/sk608/FASTQ_trimmed"
-outdir="/n/scratch3/users/s/sk608/MappingResults/20210519"
-indexdir="/home/sk608/mm10_index"
+dir="/n/scratch/users/<first character of your ID>/<your ID>/FASTQ_trimmed"
+outdir="/n/scratch/users/<first character of your ID>/<your ID>/MappingResults"
+indexdir="/home/<your ID>/mm10_index"
 
-mkdir /n/scratch3/users/s/sk608/MappingResults
 mkdir $outdir
 
 # go to FASTQ_trimmed directory
