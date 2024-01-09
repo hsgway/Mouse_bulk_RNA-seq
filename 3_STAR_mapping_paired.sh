@@ -14,9 +14,9 @@ module load gcc/6.2.0 star/2.7.3a
 module load samtools/1.10
 
 # directory
-dir="/n/scratch3/users/s/sk608/FASTQ_trimmed"
-outdir="/n/scratch3/users/s/sk608/MappingResults/20210519"
-indexdir="/home/sk608/mm10_index"
+dir="/n/scratch/users/<first character of your ID>/<your ID>/FASTQ_trimmed"
+outdir="/n/scratch/users/<first character of your ID>/<your ID>/MappingResults"
+indexdir="/home/<your ID>/mm10_index"
 
 mkdir $outdir
 
