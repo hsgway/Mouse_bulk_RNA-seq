@@ -1,7 +1,7 @@
 # Mouse_bulk_RNA-seq
 Mouse bulk RNA-seq code (mm10, GENCODE M25) running in the HMS O2 cluster
 
-## About Mouse_bulk_RNA-seq repo
+## About Mouse_bulk_RNA-seq repository
 
 This repository contains the codes for mouse bulk RNA-seq analysis using STAR
 Default reference genome is mm10 (GENCODE M25)
